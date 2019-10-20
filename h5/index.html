@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linegram</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <style id="istyle"></style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="uPanel" class="user-panel" style="display: none;opacity: 0;">
+            <div id="uPanelLeft" class="left" style="flex: 0;">
+                <div class="head">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572142878&di=bd927ece9dc8279c921e5bda6081964f&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201702%2F04%2F20170204134412_TnWXG.jpeg">
+                    <div class="info">
+                        <div class="text">
+                            <h6>
+                                热心市民
+                            </h6>
+                            <span>
+                                lukr96@mail.com
+                            </span>
+                        </div>
+                        <i class="material-icons">
+                            expand_more
+                        </i>
+                    </div>
+                </div>
+                <div class="user-menu appScrollbar">
+                    <div class="item">
+                        <i class="material-icons">
+                            person_add
+                        </i>
+                        <span>添加联系人</span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            group_add
+                        </i>
+                        <span>加入多人会话</span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            group
+                        </i>
+                        <span>创建多人会话</span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            settings_system_daydream
+                        </i>
+                        <span>创建屏幕分享</span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            video_label
+                        </i>
+                        <span>创建白板</span>
+                    </div>
+                    <hr>
+                    <div class="item">
+                        <i class="material-icons">
+                            settings_applications
+                        </i>
+                        <span>
+                            设置
+                        </span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            turned_in_not
+                        </i>
+                        <span>收藏夹</span>
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">
+                            help_outline
+                        </i>
+                        <span>常见问题 Q&A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right" onclick="menuClose()"></div>
+        </div>
+        <div class="left">
+            <div class="stats-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="find your friends..." class="search-input">
+                </div>
+                <span class="menu-btn" onclick="menuPop()">
+                    <i class="material-icons"> dehaze </i>
+                </span>
+            </div>
+            <div class="friends">
+                <div class="friend-card">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571546256090&di=8b84feed8d8c794558cd3252b498517b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190430%2F7d417f6a98274751971c8907e8e97dc1.jpeg">
+                    <div class="text">
+                        <div class="text-top">
+                            <div class="name">
+                                药酱
+                            </div>
+                            <div class="msg-status">
+                                <span class="time">
+                                    9:08
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="new-msg">
+                                一块钱的劳力士和一百万的电子手表是一样转的
+                            </div>
+                            <div class="badge">
+                                <span>
+                                    99+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="container">
+                <div class="msger-head">
+                    <div class="avatar">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571546256090&di=8b84feed8d8c794558cd3252b498517b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190430%2F7d417f6a98274751971c8907e8e97dc1.jpeg">
+                        <div class="text">
+                            <div class="name">
+                                药酱
+                            </div>
+                            <span class="text-muted">
+                                一块钱的劳力士和一百万的电子手表是一样转的
+                            </span>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <i class="material-icons"> verified_user </i>
+                        <i class="material-icons">
+                            more_vert
+                        </i>
+                    </div>
+                </div>
+                <div class="content appScrollbar">
+                    <div class="chat-bubble">
+                        <div class="avatar">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571546256090&di=8b84feed8d8c794558cd3252b498517b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190430%2F7d417f6a98274751971c8907e8e97dc1.jpeg">
+                        </div>
+                        <div class="body">
+                            <div class="msg">
+                                一块钱的劳力士和一百万的电子手表时间是一样转的
+                            </div>
+                            <div class="timer">
+                                <span>
+                                    02:30
+                                </span>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="unread-hr">
+                        Unread Messages
+                    </div>
+
+                    <div class="chat-bubble mine">
+                        <div class="avatar">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572142878&di=bd927ece9dc8279c921e5bda6081964f&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201702%2F04%2F20170204134412_TnWXG.jpeg">
+                        </div>
+                        <div class="body">
+                            <div class="msg">
+                                奥力给！👍
+                            </div>
+                            <div class="timer">
+                                <span>
+                                    02:30
+                                </span>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-bubble mine">
+                        <div class="avatar">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572142878&di=bd927ece9dc8279c921e5bda6081964f&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201702%2F04%2F20170204134412_TnWXG.jpeg">
+                        </div>
+                        <div class="body media">
+                            <div class="msg">
+                                <div class="media-warp">
+                                    <video src="https://www.runoob.com/try/demo_source/movie.mp4" controls></video>
+                                </div>
+                            </div>
+                            <div class="timer">
+                                <span>
+                                    02:30
+                                </span>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-bubble mine">
+                        <div class="avatar">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572142878&di=bd927ece9dc8279c921e5bda6081964f&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201702%2F04%2F20170204134412_TnWXG.jpeg">
+                        </div>
+                        <div class="body media">
+                            <div class="msg">
+                                <div class="media-warp">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571546107188&di=fffb270d67349eebb5014863fc8d52ce&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FW11T7XN33zh0awhowchwUow6ln2VZ0m1SVmmmWvUaLyNY1530684911653compressflag.jpg">
+                                </div>
+                            </div>
+                            <div class="timer">
+                                <span>
+                                    02:30
+                                </span>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                                <i class="material-icons">
+                                    check
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="send-bar">
+                    <i class="material-icons">
+                        mood
+                    </i>
+                    <i class="material-icons">
+                        attach_file
+                    </i>
+                    <input type="text" class="chat-input" placeholder="Write a message...">
+                    <i class="material-icons" onclick="sendMsg()">
+                        send
+                    </i>
+                    <i class="material-icons">
+                        mic
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="previewImg">
+        <i id="previewClose" class="material-icons">
+            close
+        </i>
+        <img id="pImage" src="#">
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
